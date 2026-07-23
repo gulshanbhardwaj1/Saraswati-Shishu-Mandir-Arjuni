@@ -3,17 +3,10 @@
    Firebase initialisation, Firestore/Storage queries, dynamic
    rendering, and all interactive UI behaviour.
    ============================================================= */
-
 /* -------------------------------------------------------------
    1. FIREBASE CONFIGURATION (placeholder — replace with your own
       project credentials from the Firebase console)
    ------------------------------------------------------------- */
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA3hhobZdMiccTYUlJJlGzqcInCyYI5tl4",
   authDomain: "saraswati-shishu-mandir-arjuni.firebaseapp.com",
@@ -23,7 +16,23 @@ const firebaseConfig = {
   messagingSenderId: "993993303304",
   appId: "1:993993303304:web:5ef6364df7ff26ced978bd"
 };
-);
+
+
+let db = null;
+let storage = null;
+let auth = null;
+let firebaseReady = false;
+
+try {
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.firestore();
+  storage = firebase.storage();
+  auth = firebase.auth();
+  firebaseReady = true;
+} catch (err) {
+  // Placeholder credentials will fail to initialise a real connection.
+  // The site falls back to sample content below so the UI is always complete.
+  console.warn("Firebase प्रारंभ नहीं हो सका, नमूना डेटा दिखाया जा रहा है:", err.message);
 }
 
 /* -------------------------------------------------------------
