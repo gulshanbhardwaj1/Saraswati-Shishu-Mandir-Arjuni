@@ -79,10 +79,12 @@ const SAMPLE = {
     mission: "आधुनिक शिक्षा पद्धति एवं भारतीय मूल्यों के समन्वय से विद्यार्थियों का सर्वांगीण — शारीरिक, मानसिक, बौद्धिक एवं आध्यात्मिक — विकास सुनिश्चित करना।"
   },
   teachers: [
-    { name: "श्रीमती अंजली शर्मा", subject: "हिंदी एवं संस्कृत", designation: "वरिष्ठ शिक्षिका", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },
-    { name: "श्री रमेश पाटील", subject: "गणित", designation: "गणित विभागाध्यक्ष", intro: "गणित को रोचक बनाने की अनूठी शिक्षण शैली।", photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" },
-    { name: "श्रीमती सुनीता वर्मा", subject: "विज्ञान", designation: "वरिष्ठ शिक्षिका", intro: "प्रायोगिक शिक्षण के माध्यम से विज्ञान में रुचि जागृत करना।", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" },
-    { name: "श्री विजय कुलकर्णी", subject: "सामाजिक विज्ञान", designation: "शिक्षक", intro: "इतिहास एवं नागरिक शास्त्र के अनुभवी शिक्षक।", photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" }
+    { name: "श्री माखन लाल साहु", subject: "गणित", designation: "वरिष्ठ शिक्षक", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },
+  { name: "श्री पुरुषोत्तम लाल वर्मा", subject: "हिंदी", designation: "वरिष्ठ शिक्षिक", intro: "15 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },  
+     { name: "श्री किशोरी लाल ध्रुव", subject: "अंग्रेजी एवं भौतिक", designation: "गणित विभागाध्यक्ष", intro: "गणित को रोचक बनाने की अनूठी शिक्षण शैली।", photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" },
+    { name: "श्रीमती फाल्गुनी वर्मा", subject: "विज्ञान", designation: "वरिष्ठ शिक्षिका", intro: "प्रायोगिक शिक्षण के माध्यम से विज्ञान में रुचि जागृत करना।", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" },
+   { name: "श्रीमती अंजली शर्मा", subject: "हिंदी एवं संस्कृत", designation: "वरिष्ठ शिक्षिका", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },
+     { name: "श्री श्रवण निषाद", subject: "सामाजिक विज्ञान", designation: "शिक्षक", intro: "इतिहास एवं नागरिक शास्त्र के अनुभवी शिक्षक।", photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" }
   ],
   principal: {
     name: "श्री चैन सिंह साहु",
@@ -97,7 +99,7 @@ const SAMPLE = {
     { name: "श्री चैन सिंह साहु", years: "वर्तमान प्राचार्य", note: "आधुनिक शिक्षण तकनीकों को विद्यालय में लाने का श्रेय।" }
   ],
   achievements: [
-    { title: "राज्य स्तरीय विज्ञान प्रदर्शनी", date: "2025", desc: "हमारे विद्यार्थियों ने प्रथम स्थान प्राप्त किया।", photo: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=600&auto=format&fit=crop" },
+    { title: "विद्यालय स्तरीय विज्ञान प्रदर्शनी", date: "2025", desc: "हमारे विद्यार्थियों ने प्रथम स्थान प्राप्त किया।", photo: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=600&auto=format&fit=crop" },
     { title: "जिला खेलकूद प्रतियोगिता", date: "2024", desc: "कबड्डी एवं खो-खो में स्वर्ण पदक।", photo: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop" },
     { title: "राष्ट्रीय निबंध प्रतियोगिता", date: "2024", desc: "हिंदी निबंध लेखन में द्वितीय पुरस्कार।", photo: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=600&auto=format&fit=crop" }
   ],
