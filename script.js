@@ -83,8 +83,28 @@ const SAMPLE = {
   { name: "श्री पुरुषोत्तम लाल वर्मा", subject: "हिंदी", designation: "वरिष्ठ शिक्षिक", intro: "15 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },  
      { name: "श्री किशोरी लाल ध्रुव", subject: "अंग्रेजी एवं भौतिक", designation: "गणित विभागाध्यक्ष", intro: "गणित को रोचक बनाने की अनूठी शिक्षण शैली।", photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" },
     { name: "श्रीमती फाल्गुनी वर्मा", subject: "विज्ञान", designation: "वरिष्ठ शिक्षिका", intro: "प्रायोगिक शिक्षण के माध्यम से विज्ञान में रुचि जागृत करना।", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" },
-   { name: "श्रीमती अंजली शर्मा", subject: "हिंदी एवं संस्कृत", designation: "वरिष्ठ शिक्षिका", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },
-     { name: "श्री श्रवण निषाद", subject: "सामाजिक विज्ञान", designation: "शिक्षक", intro: "इतिहास एवं नागरिक शास्त्र के अनुभवी शिक्षक।", photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" }
+   { name: "प्रीति वर्मा", subject: "हिंदी एवं संस्कृत", designation: "वरिष्ठ शिक्षिका", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },
+     { name: "श्री श्रवण निषाद", subject: "सामाजिक विज्ञान", designation: "शिक्षक", intro: "इतिहास एवं नागरिक शास्त्र के अनुभवी शिक्षक।", photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" },
+  {name: "श्री हिंछाराम भारद्वाज", subject: "गणित", designation: "वरिष्ठ शिक्षक",intro: "20 वर्षों के अनुभव के साथ शिक्षण में विशेषज्ञता।",  photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"  },
+  {name: "श्री रिपुसूदन श्रीवास",subject: "विज्ञान", designation: "वरिष्ठ शिक्षक", intro: "प्रायोगिक शिक्षण के माध्यम से विषय में रुचि जागृत करना।",photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop"  },
+  {name: "श्री लक्ष्मी नारायण साहू" ,  subject: "अंग्रेजी", designation: "वरिष्ठ शिक्षक", intro: "15 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।",photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"  },
+{name: "श्रीमती भागमती", subject: "हिंदी",  designation: "शिक्षिका ", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" },
+  {  name: "श्रीमती भगवती सेन", subject: "संस्कृत",designation: "वरिष्ठ शिक्षिका",  intro: "सरल एवं प्रभावकारी शिक्षण शैली द्वारा ज्ञानवर्धन।",  photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"},
+  {name: "श्रीमती पार्वती",subject: "सामाजिक विज्ञान", designation: "वरिष्ठ शिक्षिका", intro: "15 वर्षों के अनुभव के साथ शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"},
+  {
+    name: "श्री राही साहू",
+    subject: "कंप्यूटर एवं गणित",
+    designation: "वरिष्ठ शिक्षक",
+    intro: "नवीनतम तकनीकों के माध्यम से रोचक शिक्षण शैली।",
+    photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    name: "श्री पांचों",
+    subject: "भौतिकी",
+    designation: "वरिष्ठ शिक्षक",
+    intro: "अवधारणाओं को स्पष्ट और सरल बनाने की अनूठी शैली।",
+    photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"
+  }
   ],
   principal: {
     name: "श्री चैन सिंह साहु",
