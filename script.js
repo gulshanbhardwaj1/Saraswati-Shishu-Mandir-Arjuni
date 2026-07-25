@@ -2,6 +2,7 @@
    सरस्वती शिशु मंदिर, अर्जुनी — script.js
    Firebase initialisation, Firestore/Storage queries, dynamic
    rendering, and all interactive UI behaviour.
+   https://gulshanbhardwaj1.github.io/Saraswati-Shishu-Mandir-Arjuni/
    ============================================================= */
 /* -------------------------------------------------------------
    1. FIREBASE CONFIGURATION (placeholder — replace with your own
