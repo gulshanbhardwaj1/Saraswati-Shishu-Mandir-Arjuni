@@ -99,29 +99,29 @@ const SAMPLE = {
     photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop"
   },
   {
-    name: "श्री पांचों",
-    subject: "भौतिकी",
-    designation: "वरिष्ठ शिक्षक",
-    intro: "अवधारणाओं को स्पष्ट और सरल बनाने की अनूठी शैली।",
+    name: "श्रीमती कमला",
+    subject: "",
+    designation: "स्वच्छता कर्मी",
+    intro: "विद्यालय की समस्त दैनिक कार्य",
     photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"
   }
   ],
   principal: {
-    name: "श्री चैन सिंह साहु",
+    name: "श्री चैन सिंह वर्मा",
     role: "वर्तमान प्राचार्य",
     message: "शिक्षा का उद्देश्य केवल जानकारी देना नहीं, अपितु चरित्र निर्माण करना है। हमारा प्रयास है कि प्रत्येक बालक संस्कारवान, आत्मविश्वासी एवं ज्ञानवान बने।",
     details: "इस वर्ष नियुक्त हुए | एम.एड, .",
     photo: "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=800&auto=format&fit=crop"
   },
   formerPrincipals: [
-    { name: "श्री चैन सिंह साहु", years: "__", note: "विद्यालय के संस्थापक प्राचार्य, जिन्होंने नींव रखी।" },
-    { name: "श्री रमेश शर्मा", years: "2018 - 2026", note: "विद्यालय के विस्तार एवं सांस्कृतिक कार्यक्रमों की अगुवाई।" },
-    { name: "श्री चैन सिंह साहु", years: "वर्तमान प्राचार्य", note: "आधुनिक शिक्षण तकनीकों को विद्यालय में लाने का श्रेय।" }
+    { name: "श्री चैन सिंह वर्मा", years: "2026", note: "इसी वर्ष नियुक्त हुए" },
+    { name: "श्री रमेश शर्मा", years: "2010-2026", note: "विद्यालय के विस्तार एवं सांस्कृतिक कार्यक्रमों की अगुवाई।" },
+    { name: "श्री अशोक शुक्ला", years: "1991-2010", note: "विद्यालय के संस्थापक प्राचार्य, जिन्होंने नींव रखी।" }
   ],
   achievements: [
-    { title: "विद्यालय स्तरीय विज्ञान प्रदर्शनी", date: "2025", desc: "हमारे विद्यार्थियों ने प्रथम स्थान प्राप्त किया।", photo: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=600&auto=format&fit=crop" },
-    { title: "जिला खेलकूद प्रतियोगिता", date: "2024", desc: "कबड्डी एवं खो-खो में स्वर्ण पदक।", photo: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop" },
-    { title: "राष्ट्रीय निबंध प्रतियोगिता", date: "2024", desc: "हिंदी निबंध लेखन में द्वितीय पुरस्कार।", photo: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=600&auto=format&fit=crop" }
+    { title: "विद्यालय स्तरीय विज्ञान प्रदर्शनी", date: "2025", desc: "हमारे विद्यार्थियों द्वारा प्रस्तुत मॉडल।", photo: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=600&auto=format&fit=crop" },
+    { title: "खेलकूद ", date: "2024", desc: "कबड्डी, खो-खो, बैडमिंटन, क्रिकेट इत्यादि।", photo: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=600&auto=format&fit=crop" },
+    { title: "राष्ट्रीय निबंध प्रतियोगिता", date: "2024", desc: "हिंदी निबंध लेखन ।", photo: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=600&auto=format&fit=crop" }
   ],
   notices: [
     { title: "वार्षिक परीक्षा तिथि घोषित", desc: "कक्षा 1 से 10 तक की वार्षिक परीक्षाएँ मार्च माह में आयोजित होंगी।", date: "2026-02-15", category: "परीक्षा" },
