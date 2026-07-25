@@ -217,8 +217,8 @@ const COUNCILS = [
       { name: "भूमिका सोनवानी", post: "अध्यक्ष" },
       { name: "रितेश बंजारे", post: "उपाध्यक्ष" },
       { name: "—", post: "सचिव" },
-      { name: "—", post: "सह सचिव" },
-      { name: "चांदनी निषाद", post: "कोषाध्यक्ष" }
+      { name: "चांदनी निषाद", post: "सह सचिव" },
+      { name: "-", post: "कोषाध्यक्ष" }
     ]
   },
 ];
@@ -235,7 +235,7 @@ function renderChips(){
   chipsWrap.innerHTML = "";
   const allChip = document.createElement("button");
   allChip.className = "filter-chip active";
-  allChip.textContent = "सभी परिषद";
+  allChip.textContent = "सभी";
   allChip.dataset.filter = "सभी";
   allChip.addEventListener("click", () => setFilter("सभी", allChip));
   chipsWrap.appendChild(allChip);
@@ -274,8 +274,8 @@ function buildGenderTabs(container, activeGender, onChange){
   const tabsWrap = document.createElement("div");
   tabsWrap.className = "gender-tabs-wrap";
   tabsWrap.innerHTML = `
-    <button class="gender-tab" data-gender="boy">👦 किशोर भारती (भैया)</button>
-    <button class="gender-tab" data-gender="girl">👧 कन्या भारती (बहन)</button>
+    <button class="gender-tab" data-gender="boy">किशोर भारती </button>
+    <button class="gender-tab" data-gender="girl">कन्या भारती </button>
     <span class="gender-tabs-underline"></span>`;
   container.appendChild(tabsWrap);
 
