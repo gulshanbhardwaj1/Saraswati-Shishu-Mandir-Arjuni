@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>समिति | सरस्वती शिशु मंदिर, अर्जुनी</title>
+<meta name="description" content="सरस्वती शिशु मंदिर, अर्जुनी की विभिन्न समितियों तथा उनके सदस्यों की सूची।">
+<meta name="theme-color" content="#0F2540">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* इसी थीम टोकन का उपयोग किया गया है जो मुख्य वेबसाइट व पदाधिकारी पेज में है,
+   ताकि सभी पेज एक जैसे दिखें। यह पूरी तरह स्वतंत्र सिंगल फ़ाइल है। */
+:root{
+  --saffron:#FF6A1A; --saffron-light:#FFB067; --saffron-soft:#FFF1E4;
+  --navy:#0F2540; --navy-light:#1B3A5E; --sky:#EAF5FC; --sky-mid:#CFE8F7;
+  --gold:#C89B3C; --green-accent:#0B6E4F; --white:#FFFFFF; --ink:#16263D; --ink-soft:#4C5C72;
+  --border-soft:#E2E9F1; --bg:#fff; --bg-alt:var(--sky); --surface:#fff;
+  --shadow:0 10px 30px -12px rgba(15,37,64,.18); --shadow-sm:0 4px 14px -6px rgba(15,37,64,.15);
+  --font-display:'Baloo 2','Noto Sans Devanagari',sans-serif; --font-body:'Noto Sans Devanagari','Baloo 2',sans-serif;
+  --radius-md:16px; --transition:.35s cubic-bezier(.4,0,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body);background:var(--bg-alt);color:var(--ink);line-height:1.7}
+h1,h2,h3{font-family:var(--font-display);color:var(--navy)}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+
+.tricolor-strip{height:5px;width:100%;background:linear-gradient(90deg,var(--saffron) 0 33.3%,#fff 33.3% 66.6%,var(--green-accent) 66.6% 100%)}
+
+.page-hero{
+  position:relative; background:linear-gradient(155deg,var(--navy),#0a1a2e);
+  padding:70px 0 60px; color:#fff; text-align:center; overflow:hidden;
+}
+.page-hero::before{
+  content:''; position:absolute; inset:0; opacity:.12; background-size:34px 34px;
+  background-image: radial-gradient(circle, #fff 1.5px, transparent 1.5px);
+}
+.page-hero .eyebrow{color:var(--saffron-light); font-weight:700; font-family:var(--font-display); letter-spacing:.5px}
+.page-hero h1{font-size:clamp(1.6rem,3.6vw,2.5rem); color:#fff; margin:10px 0 8px; position:relative}
+.page-hero p{color:#C8D6E8; max-width:600px; margin:0 auto; position:relative}
+
+.close-btn{
+  position:fixed; top:20px; right:24px; z-index:600;
+  width:48px; height:48px; border-radius:50%; background:var(--white); color:var(--navy);
+  display:flex; align-items:center; justify-content:center; font-size:1.6rem; line-height:1; text-decoration:none;
+  box-shadow:var(--shadow); transition:var(--transition); border:2px solid var(--saffron); font-family:Arial,sans-serif; font-weight:700;
+}
+.close-btn:hover{background:var(--saffron); color:#fff; transform:rotate(90deg)}
+
+.home-link{
+  position:fixed; top:20px; left:24px; z-index:600;
+  display:flex; align-items:center; gap:8px; padding:11px 18px; border-radius:30px;
+  background:var(--white); color:var(--navy); font-weight:700; font-size:.88rem; text-decoration:none;
+  box-shadow:var(--shadow); transition:var(--transition); border:2px solid var(--saffron-light);
+}
+.home-link:hover{background:var(--saffron); color:#fff; border-color:var(--saffron)}
+.home-link span.arrow{font-size:1.05rem; line-height:1}
+
+.filter-bar{ padding:34px 0 10px; }
+.filter-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.filter-chip{
+  padding:10px 20px; border-radius:30px; font-weight:700; font-size:.88rem; font-family:var(--font-body);
+  background:var(--surface); border:1px solid var(--border-soft); transition:var(--transition); cursor:pointer; color:var(--ink);
+}
+.filter-chip:hover{border-color:var(--saffron); color:var(--saffron)}
+.filter-chip.active{background:var(--saffron); color:#fff; border-color:var(--saffron)}
+
+.committee-block{padding:36px 0}
+.committee-title{display:flex; align-items:center; gap:14px; margin-bottom:10px}
+.committee-title h2{font-size:1.4rem}
+.committee-title .line{flex:1; height:2px; background:linear-gradient(90deg,var(--saffron-light),transparent)}
+.committee-badge{font-size:.75rem; font-weight:700; background:var(--saffron-soft); color:var(--saffron); padding:4px 12px; border-radius:20px}
+.committee-desc{color:var(--ink-soft); font-size:.92rem; margin-bottom:22px; max-width:760px}
+
+.officer-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:20px}
+.officer-card{
+  background:var(--surface); border:1px solid var(--border-soft); border-radius:var(--radius-md);
+  padding:24px 20px; text-align:center; box-shadow:var(--shadow-sm); transition:var(--transition);
+}
+.officer-card:hover{transform:translateY(-6px); box-shadow:var(--shadow); border-color:var(--saffron)}
+.officer-avatar{
+  width:70px; height:70px; border-radius:50%; margin:0 auto 14px; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg,var(--saffron),#E8540B); color:#fff; font-size:1.5rem; font-family:var(--font-display); font-weight:800;
+}
+.officer-card h3{font-size:1.02rem; margin-bottom:6px}
+.officer-post{display:inline-block; font-size:.8rem; font-weight:700; color:var(--navy); background:var(--sky-mid); padding:4px 12px; border-radius:20px}
+
+.empty-msg{text-align:center; color:var(--ink-soft); padding:40px 0}
+
+footer{background:var(--navy); color:#B7C6DA; text-align:center; padding:30px 24px 22px; margin-top:40px; font-size:.85rem}
+footer a{color:var(--saffron-light); font-weight:600}
+.footer-links{display:flex; gap:22px; justify-content:center; margin-bottom:14px; flex-wrap:wrap}
+.footer-links a{font-size:.9rem}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="home-link" aria-label="मुख्य पृष्ठ पर जाएँ" title="मुख्य पृष्ठ पर जाएँ">
+  <span class="arrow">&larr;</span> मुख्य पृष्ठ
+</a>
+
+<a href="index.html" class="close-btn" aria-label="मुख्य पृष्ठ पर वापस जाएँ" title="बंद करें">
+  &times;
+</a>
+
+<div class="tricolor-strip"></div>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">विद्यालय प्रबंधन</span>
+    <h1>समिति</h1>
+    <p>विद्यालय के सुव्यवस्थित संचालन हेतु गठित विभिन्न समितियाँ तथा उनके सदस्यगण।</p>
+  </div>
+</header>
+
+<section class="filter-bar container">
+  <div class="filter-chips" id="filterChips"></div>
+</section>
+
+<main class="container" id="committeesWrap"></main>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html#intro">विद्यालय परिचय</a>
+    <a href="index.html#contact">संपर्क करें</a>
+  </div>
+  <p>&copy; <span id="yr"></span> सरस्वती शिशु मंदिर, अर्जुनी। सर्वाधिकार सुरक्षित।</p>
+</footer>
+
+<script>
+/* =============================================================
+   DATA — यहाँ से जोड़ें / बदलें
+   -------------------------------------------------------------
+   नई समिति जोड़नी हो तो COMMITTEES सूची में नया ऑब्जेक्ट जोड़ें।
+   description वैकल्पिक है। members सूची में { name, post } जोड़ते
+   जाएँ — जितने चाहें उतने पद जोड़ सकते हैं, कोई सीमा नहीं है।
+   ============================================================= */
+const COMMITTEES = [
+  {
+    id: "mahaveer",
+    name: "महावीर शिक्षण समिति, अर्जुनी",
+    description: "विद्यालय की समग्र नीति-निर्धारण एवं प्रशासनिक व्यवस्था हेतु उत्तरदायी समिति।",
+    members: [
+      { name: "श्री दिनेश अग्रवाल", post: "अध्यक्ष" },
+      { name: "श्रीमती वंदना राठी", post: "उपाध्यक्ष" },
+      { name: "डॉ. सरोज देशमुख", post: "सचिव (प्राचार्य)" },
+      { name: "श्री मनोज ठाकरे", post: "कोषाध्यक्ष" },
+      { name: "श्रीमती अर्चना पंडित", post: "सदस्य" },
+      { name: "श्री सुरेश गायकवाड़", post: "सदस्य" }
+    ]
+  }
+];
+
+/* ---- Render logic (इसमें बदलाव करने की आवश्यकता नहीं) ---- */
+const wrap = document.getElementById("committeesWrap");
+const chipsWrap = document.getElementById("filterChips");
+
+function initials(name){
+  return name.trim().split(/\s+/).slice(0,2).map(w => w[0]).join("");
+}
+
+function renderChips(){
+  chipsWrap.innerHTML = "";
+  const allChip = document.createElement("button");
+  allChip.className = "filter-chip active";
+  allChip.textContent = "सभी समिति";
+  allChip.dataset.filter = "सभी";
+  allChip.addEventListener("click", () => setFilter("सभी", allChip));
+  chipsWrap.appendChild(allChip);
+
+  COMMITTEES.forEach(c => {
+    const chip = document.createElement("button");
+    chip.className = "filter-chip";
+    chip.textContent = c.name;
+    chip.dataset.filter = c.id;
+    chip.addEventListener("click", () => setFilter(c.id, chip));
+    chipsWrap.appendChild(chip);
+  });
+}
+
+function setFilter(id, btn){
+  document.querySelectorAll(".filter-chip").forEach(c => c.classList.remove("active"));
+  btn.classList.add("active");
+  render(id);
+}
+
+function render(filter = "सभी"){
+  wrap.innerHTML = "";
+  const list = filter === "सभी" ? COMMITTEES : COMMITTEES.filter(c => c.id === filter);
+
+  if (!list.length){
+    wrap.innerHTML = '<p class="empty-msg">इस समिति हेतु अभी कोई जानकारी उपलब्ध नहीं है।</p>';
+    return;
+  }
+
+  list.forEach(committee => {
+    const block = document.createElement("section");
+    block.className = "committee-block";
+    block.innerHTML = `
+      <div class="committee-title">
+        <h2>${committee.name}</h2>
+        <span class="line"></span>
+        <span class="committee-badge">${committee.members.length} सदस्य</span>
+      </div>
+      ${committee.description ? `<p class="committee-desc">${committee.description}</p>` : ""}
+      <div class="officer-grid"></div>`;
+    const grid = block.querySelector(".officer-grid");
+    committee.members.forEach(m => {
+      const card = document.createElement("div");
+      card.className = "officer-card";
+      card.innerHTML = `
+        <div class="officer-avatar">${initials(m.name)}</div>
+        <h3>${m.name}</h3>
+        <span class="officer-post">${m.post}</span>`;
+      grid.appendChild(card);
+    });
+    wrap.appendChild(block);
+  });
+}
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+renderChips();
+render();
+</script>
+</body>
+</html>
