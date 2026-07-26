@@ -81,11 +81,11 @@ const SAMPLE = {
   },
   teachers: [
     { name: "श्री माखन लाल साहु", subject: "गणित", designation: "वरिष्ठ शिक्षक", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },
-  { name: "श्री पुरुषोत्तम लाल वर्मा", subject: "हिंदी", designation: "वरिष्ठ शिक्षिक", intro: "15 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },  
-     { name: "श्री किशोरी लाल ध्रुव", subject: "अंग्रेजी एवं भौतिक", designation: "गणित विभागाध्यक्ष", intro: "गणित को रोचक बनाने की अनूठी शिक्षण शैली।", photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" },
-    { name: "श्रीमती फाल्गुनी वर्मा", subject: "विज्ञान", designation: "वरिष्ठ शिक्षिका", intro: "प्रायोगिक शिक्षण के माध्यम से विज्ञान में रुचि जागृत करना।", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" },
-   { name: "प्रीति वर्मा", subject: "हिंदी एवं संस्कृत", designation: "वरिष्ठ शिक्षिका", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },
-     { name: "श्री श्रवण निषाद", subject: "सामाजिक विज्ञान", designation: "शिक्षक", intro: "इतिहास एवं नागरिक शास्त्र के अनुभवी शिक्षक।", photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" },
+  { name: "श्री पुरुषोत्तम लाल वर्मा", subject: "हिंदी", designation: "वरिष्ठ शिक्षिक", intro: "20 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },  
+     { name: "श्री किशोरी लाल ध्रुव", subject: "अंग्रेजी एवं भौतिक", designation: "गणित विभागाध्यक्ष", intro: "अंग्रेजी और  में ।", photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" },
+    { name: "श्रीमती फाल्गुनी वर्मा", subject: "विज्ञान एवं व्यवसाय", designation: "वरिष्ठ शिक्षिका", intro: "प्रायोगिक शिक्षण के माध्यम से विज्ञान में रुचि जागृत करना।", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" },
+   { name: "प्रीति वर्मा", subject: "कंप्यूटर प्रशिक्षण", designation: "शिक्षिका", intro: " कंप्यूटर के सामान्य और प्रारंभिक जानकारी का  प्रवाह।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" },
+     { name: "श्री श्रवण निषाद", subject: "सामाजिक विज्ञान", designation: "वरिष्ठ शिक्षक", intro: "इतिहास एवं नागरिक शास्त्र के अनुभवी शिक्षक।", photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" },
   {name: "श्री हिंछाराम भारद्वाज", subject: "गणित", designation: "वरिष्ठ शिक्षक",intro: "20 वर्षों के अनुभव के साथ शिक्षण में विशेषज्ञता।",  photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"  },
   {name: "श्री रिपुसूदन श्रीवास",subject: "विज्ञान", designation: "वरिष्ठ शिक्षक", intro: "प्रायोगिक शिक्षण के माध्यम से विषय में रुचि जागृत करना।",photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop"  },
   {name: "श्री लक्ष्मी नारायण साहू" ,  subject: "अंग्रेजी", designation: "वरिष्ठ शिक्षक", intro: "15 वर्षों के अनुभव के साथ भाषा शिक्षण में विशेषज्ञता।",photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"  },
@@ -94,16 +94,16 @@ const SAMPLE = {
   {name: "श्रीमती पार्वती",subject: "सामाजिक विज्ञान", designation: "वरिष्ठ शिक्षिका", intro: "15 वर्षों के अनुभव के साथ शिक्षण में विशेषज्ञता।", photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"},
   {
     name: "श्री राही साहू",
-    subject: "कंप्यूटर एवं गणित",
-    designation: "वरिष्ठ शिक्षक",
-    intro: "नवीनतम तकनीकों के माध्यम से रोचक शिक्षण शैली।",
+    
+    designation: "आया", 
+    intro: "विद्यालय की समस्त दैनिक कार्य मे महत्वपूर्ण योगदान",
     photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop"
   },
   {
-    name: "श्रीमती कमला",
-    subject: "",
-    designation: "स्वच्छता कर्मी",
-    intro: "विद्यालय की समस्त दैनिक कार्य",
+    name: "श्रीमती पाचो बाई यादव",
+    
+    designation: "आया",
+    intro: "विद्यालय की समस्त दैनिक कार्य मे महत्वपूर्ण योगदान",
     photo: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop"
   }
   ],
@@ -125,15 +125,15 @@ const SAMPLE = {
     { title: "राष्ट्रीय निबंध प्रतियोगिता", date: "2024", desc: "हिंदी निबंध लेखन ।", photo: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=600&auto=format&fit=crop" }
   ],
   notices: [
-    { title: "वार्षिक परीक्षा तिथि घोषित", desc: "कक्षा 1 से 10 तक की वार्षिक परीक्षाएँ मार्च माह में आयोजित होंगी।", date: "2026-02-15", category: "परीक्षा" },
-    { title: "गर्मी की छुट्टियाँ", desc: "विद्यालय में ग्रीष्मकालीन अवकाश की सूचना।", date: "2026-05-01", category: "अवकाश" },
-    { title: "नए सत्र हेतु प्रवेश प्रारंभ", desc: "सत्र 2026-27 के लिए प्रवेश प्रक्रिया शुरू।", date: "2026-01-10", category: "प्रवेश" },
-    { title: "दसवीं बोर्ड परिणाम घोषित", desc: "इस वर्ष विद्यालय का परिणाम 98% रहा।", date: "2026-01-05", category: "परिणाम" },
+    { title: "परीक्षा तिथि ", desc: "पूरे साल में कार्यक्रमों एवं विधिक कार्य तथा शासन परीक्षा के अनुसार।", date: "2026-02-15", category: "परीक्षा" },
+    { title: "गर्मी की छुट्टियाँ", desc: "विद्यालय में ग्रीष्मकालीन छुट्टी अंतिम परीक्षा के पश्चात और ग्रीष्मकालीन अवकाश के अंतर्गत।", date: "2026-05-01", category: "अवकाश" },
+    { title: "नए सत्र हेतु प्रवेश प्रारंभ", desc: "सत्र 2026-27 के लिए प्रवेश प्रक्रिया शुरू।", date: "2026-06-16", category: "प्रवेश" },
+    { title: "वार्षिक परीक्षा परिणाम", desc: "प्रत्येक वर्ष अधिकांशत अप्रैल-मई तक", date: "2026-01-05", category: "परिणाम" },
     { title: "अभिभावक-शिक्षक बैठक", desc: "सभी अभिभावकों से उपस्थित रहने का अनुरोध है।", date: "2026-02-20", category: "घोषणा" }
   ],
   events: [
-    { title: "वार्षिकोत्सव समारोह", desc: "विद्यालय का भव्य वार्षिकोत्सव आयोजित होगा।", date: "2026-03-12", photo: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop" },
-    { title: "विज्ञान प्रदर्शनी", desc: "विद्यार्थियों के नवाचार प्रोजेक्ट्स का प्रदर्शन।", date: "2026-02-08", photo: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=600&auto=format&fit=crop" },
+    { title: "वार्षिकोत्सव समारोह", desc: "इस वर्ष विद्यालय का भव्य वार्षिकोत्सव आयोजित होगा।", date: "2026-03-12", photo: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop" },
+    { title: "विज्ञान प्रदर्शनी", desc: "1 अगस्त को विज्ञान प्रदर्शनी निर्धारित है।", date: "2026-02-08", photo: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=600&auto=format&fit=crop" },
     { title: "योग एवं खेल दिवस", desc: "स्वास्थ्य जागरूकता हेतु योग सत्र एवं खेल प्रतियोगिताएँ।", date: "2026-06-21", photo: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=600&auto=format&fit=crop" }
   ],
   gallery: [
@@ -154,7 +154,7 @@ const SAMPLE = {
   contact: {
     phone: "+91 73542 40505",
     email: "info@ssmarjuni.edu.in",
-    hours: "सोमवार - शनिवार, प्रातः 10:30 - 4:00"
+    hours: "सोमवार - शुक्रवार, प्रातः 10:30 - 4:00 शनिवार 7:30 1:30"
   }
 };
 
