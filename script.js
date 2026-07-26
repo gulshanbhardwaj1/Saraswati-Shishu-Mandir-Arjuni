@@ -70,8 +70,8 @@ function formatDateParts(dateStr) {
 const SAMPLE = {
   heroSlides: [
     "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1600&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1600&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1600&auto=format&fit=crop"
+    "https://github.com/gautamnishad/S.s.m.Arjuni/blob/main/Home/5.jpg",
+    "https://github.com/gautamnishad/S.s.m.Arjuni/blob/main/Home/s1.jpg"
   ],
   schoolInfo: {
     estYear: "1991",
