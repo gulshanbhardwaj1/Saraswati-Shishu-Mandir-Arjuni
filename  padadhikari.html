@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>वार्षिक संचालन पदाधिकारी | सरस्वती शिशु मंदिर, अर्जुनी</title>
+<meta name="description" content="सरस्वती शिशु मंदिर, अर्जुनी की विभिन्न परिषदों के वार्षिक संचालन पदाधिकारियों की सूची।">
+<meta name="theme-color" content="#0F2540">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* =============================================================
+   वार्षिक संचालन पदाधिकारी — यह पेज मुख्य वेबसाइट के समान रंग-योजना
+   (साफरन / नेवी / स्काई) और टाइपोग्राफी का उपयोग करता है, ताकि
+   दोनों पेज एक ही ब्रांड अनुभव दें। यह पूरी तरह स्वतंत्र सिंगल फ़ाइल है।
+   ============================================================= */
+:root{
+  --saffron:#FF6A1A; --saffron-light:#FFB067; --saffron-soft:#FFF1E4;
+  --navy:#0F2540; --navy-light:#1B3A5E; --sky:#EAF5FC; --sky-mid:#CFE8F7;
+  --gold:#C89B3C; --green-accent:#0B6E4F; --white:#FFFFFF; --ink:#16263D; --ink-soft:#4C5C72;
+  --border-soft:#E2E9F1; --bg:#fff; --bg-alt:var(--sky); --surface:#fff;
+  --shadow:0 10px 30px -12px rgba(15,37,64,.18); --shadow-sm:0 4px 14px -6px rgba(15,37,64,.15);
+  --font-display:'Baloo 2','Noto Sans Devanagari',sans-serif; --font-body:'Noto Sans Devanagari','Baloo 2',sans-serif;
+  --radius-md:16px; --radius-lg:26px; --transition:.35s cubic-bezier(.4,0,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body);background:var(--bg-alt);color:var(--ink);line-height:1.7}
+h1,h2,h3,h4{font-family:var(--font-display);color:var(--navy)}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+
+.tricolor-strip{height:5px;width:100%;background:linear-gradient(90deg,var(--saffron) 0 33.3%,#fff 33.3% 66.6%,var(--green-accent) 66.6% 100%)}
+
+/* ---- Page header / hero ---- */
+.page-hero{
+  position:relative; background:linear-gradient(155deg,var(--navy),#0a1a2e);
+  padding:70px 0 60px; color:#fff; text-align:center; overflow:hidden;
+}
+.page-hero::before{
+  content:''; position:absolute; inset:0; opacity:.12; background-size:34px 34px;
+  background-image: radial-gradient(circle, #fff 1.5px, transparent 1.5px);
+}
+.page-hero .eyebrow{color:var(--saffron-light); font-weight:700; font-family:var(--font-display); letter-spacing:.5px}
+.page-hero h1{font-size:clamp(1.6rem,3.6vw,2.5rem); color:#fff; margin:10px 0 8px; position:relative}
+.page-hero p{color:#C8D6E8; max-width:600px; margin:0 auto; position:relative}
+
+.close-btn{
+  position:fixed; top:20px; right:24px; z-index:600;
+  width:48px; height:48px; border-radius:50%; background:var(--white); color:var(--navy);
+  display:flex; align-items:center; justify-content:center; font-size:1.6rem; line-height:1; text-decoration:none;
+  box-shadow:var(--shadow); transition:var(--transition); border:2px solid var(--saffron); font-family:Arial,sans-serif; font-weight:700;
+}
+.close-btn:hover{background:var(--saffron); color:#fff; transform:rotate(90deg)}
+
+.home-link{
+  position:fixed; top:20px; left:24px; z-index:600;
+  display:flex; align-items:center; gap:8px; padding:11px 18px; border-radius:30px;
+  background:var(--white); color:var(--navy); font-weight:700; font-size:.88rem; text-decoration:none;
+  box-shadow:var(--shadow); transition:var(--transition); border:2px solid var(--saffron-light);
+}
+.home-link:hover{background:var(--saffron); color:#fff; border-color:var(--saffron)}
+.home-link span.arrow{font-size:1.05rem; line-height:1}
+
+/* ---- Filters ---- */
+.filter-bar{ padding:34px 0 10px; }
+.filter-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.filter-chip{
+  padding:10px 20px; border-radius:30px; font-weight:700; font-size:.88rem; font-family:var(--font-body);
+  background:var(--surface); border:1px solid var(--border-soft); transition:var(--transition); cursor:pointer; color:var(--ink);
+}
+.filter-chip:hover{border-color:var(--saffron); color:var(--saffron)}
+.filter-chip.active{background:var(--saffron); color:#fff; border-color:var(--saffron)}
+
+/* ---- Sliding-underline gender tabs (केवल विद्यालय पदाधिकारी के अंदर उपयोग होता है) ---- */
+.gender-tabs-wrap{
+  display:flex; align-items:center; gap:30px; margin-bottom:22px;
+  border-bottom:2px solid var(--border-soft); position:relative;
+}
+.gender-tab{
+  font-family:var(--font-display); font-weight:700; font-size:.98rem; color:var(--ink-soft);
+  cursor:pointer; transition:var(--transition); user-select:none; padding:0 0 12px; background:none; border:none;
+}
+.gender-tab:hover{color:var(--saffron)}
+.gender-tab.active{color:var(--saffron)}
+.gender-tabs-underline{
+  position:absolute; bottom:-2px; left:0; height:3px; background:var(--saffron);
+  border-radius:3px; transition:left .35s cubic-bezier(.4,0,.2,1), width .35s cubic-bezier(.4,0,.2,1);
+}
+
+/* ---- Council sections ---- */
+.council-block{padding:36px 0}
+.council-title{
+  display:flex; align-items:center; gap:14px; margin-bottom:24px;
+}
+.council-title h2{font-size:1.4rem}
+.council-title .line{flex:1; height:2px; background:linear-gradient(90deg,var(--saffron-light),transparent)}
+.council-badge{
+  font-size:.75rem; font-weight:700; background:var(--saffron-soft); color:var(--saffron);
+  padding:4px 12px; border-radius:20px;
+}
+
+.officer-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:20px}
+.officer-card{
+  background:var(--surface); border:1px solid var(--border-soft); border-radius:var(--radius-md);
+  padding:24px 20px; text-align:center; box-shadow:var(--shadow-sm); transition:var(--transition);
+}
+.officer-card:hover{transform:translateY(-6px); box-shadow:var(--shadow); border-color:var(--saffron)}
+.officer-avatar{
+  width:70px; height:70px; border-radius:50%; margin:0 auto 14px; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg,var(--saffron),#E8540B); color:#fff; font-size:1.5rem; font-family:var(--font-display); font-weight:800;
+  overflow:hidden;
+}
+.officer-avatar img{width:100%; height:100%; object-fit:cover; display:block}
+.officer-card h3{font-size:1.02rem; margin-bottom:6px}
+.officer-post{
+  display:inline-block; font-size:.8rem; font-weight:700; color:var(--navy); background:var(--sky-mid);
+  padding:4px 12px; border-radius:20px;
+}
+
+.empty-msg{text-align:center; color:var(--ink-soft); padding:40px 0}
+
+footer{background:var(--navy); color:#B7C6DA; text-align:center; padding:30px 24px 22px; margin-top:40px; font-size:.85rem}
+footer a{color:var(--saffron-light); font-weight:600}
+.footer-links{display:flex; gap:22px; justify-content:center; margin-bottom:14px; flex-wrap:wrap}
+.footer-links a{font-size:.9rem}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="home-link" aria-label="मुख्य पृष्ठ पर जाएँ" title="मुख्य पृष्ठ पर जाएँ">
+  <span class="arrow">&larr;</span> मुख्य पृष्ठ
+</a>
+
+<a href="index.html" class="close-btn" aria-label="मुख्य पृष्ठ पर वापस जाएँ" title="बंद करें">
+  &times;
+</a>
+
+<div class="tricolor-strip"></div>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">विद्यालय संचालन</span>
+    <h1>वर्ष संचालन पदाधिकारी</h1>
+    <p>विभिन्न परिषदों के अंतर्गत नियुक्त पदाधिकारियों की सूची — जो वर्ष भर विद्यालय की विविध गतिविधियों के सुचारू संचालन हेतु उत्तरदायी हैं।</p>
+  </div>
+</header>
+
+<section class="filter-bar container">
+  <div class="filter-chips" id="filterChips"></div>
+</section>
+
+<main class="container" id="councilsWrap"></main>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html#intro">विद्यालय परिचय</a>
+    <a href="index.html#contact">संपर्क करें</a>
+  </div>
+  <p>&copy; <span id="yr"></span> सरस्वती शिशु मंदिर, अर्जुनी। सर्वाधिकार सुरक्षित।</p>
+</footer>
+
+<script>
+/* =============================================================
+   DATA — यहाँ से जोड़ें / बदलें
+   -------------------------------------------------------------
+   नई परिषद जोड़नी हो तो COUNCILS सूची में नया ऑब्जेक्ट जोड़ें।
+   हर परिषद में members सूची में { name, post, gender } जोड़ते जाएँ —
+   gender की वैल्यू "boy" (किशोर भारती) या "girl" (कन्या भारती) होनी
+   चाहिए, ताकि ऊपर का टॉगल सही से फ़िल्टर कर सके। जितने चाहें उतने
+   पद जोड़ सकते हैं, कोई सीमा नहीं है।
+   ============================================================= */
+const COUNCILS = [
+  {
+    id: "vidyalaya",
+    name: "विद्यालय पदाधिकारी",
+    members: [
+      { name: "अरमान ताटी", post: "अध्यक्ष", gender: "boy" , photo: "https://github.com/gulshanbhardwaj1/Saraswati-Shishu-Mandir-Arjuni/blob/main/all-images/Kishor%20Bharati%20adhyaksh.jpg" },
+      { name: "रवि शंकर सेन", post: "उपाध्यक्ष", gender: "boy", photo:""},
+      { name: "भानु प्रताप यादव", post: "सचिव", gender: "boy" },
+      { name: "ज्ञानु ध्रुव", post: "सह सचिव", gender: "boy" },
+      { name: "मयंक साहू", post: "सेनापति", gender: "boy" },
+      { name: "गुलशन भारद्वाज", post: "अनुशासन प्रमुख", gender: "boy" , photo:""},
+      { name: "दिनेश्वर बंजारे", post: "क्रीड़ा प्रमुख", gender: "boy", photo: "https://github.com/gulshanbhardwaj1/Saraswati-Shishu-Mandir-Arjuni/blob/main/all-images/KridaPramukh.jpg"},
+      { name: "ईशान कुरैशी", post: "शारीरिक प्रमुख", gender: "boy" },
+      { name: "मयंक साहू", post: "घोष प्रमुख", gender: "boy" },
+
+      { name: "सृष्टि ध्रुव", post: "अध्यक्ष", gender: "girl" , photo: "https://github.com/gulshanbhardwaj1/Saraswati-Shishu-Mandir-Arjuni/blob/main/all-images/%20KanyaBharatiadhyaksh.jpg" },
+      { name: "शुभम", post: "उपाध्यक्ष", gender: "girl" },
+      { name: "—", post: "सचिव", gender: "girl" },
+      { name: "—", post: "सह सचिव", gender: "girl" },
+      { name: "—", post: "सेनापति", gender: "girl" },
+      { name: "कौशिल्या साहू", post: "अनुशासन प्रमुख", gender: "girl" },
+      { name: "—", post: "क्रीड़ा प्रमुख", gender: "girl" },
+      { name: "—", post: "शारीरिक प्रमुख", gender: "girl" },
+      { name: "—", post: "घोष प्रमुख", gender: "girl" }
+    ]
+  },
+  {
+    id: "ganit",
+    name: "गणित परिषद",
+    members: [
+      { name: "जन्नत सोनवानी", post: "अध्यक्ष" },
+      { name: "अंजली वैष्णव", post: "उपाध्यक्ष" },
+      { name: "यामिनी साहू", post: "सचिव" },
+      { name: "दामिनी साहू", post: "सह सचिव" },
+      { name: "मुस्कान वर्मा", post: "कोषाध्यक्ष" }
+    ]
+  },
+  {
+    id: "vigyan",
+    name: "विज्ञान परिषद",
+    members: [
+      { name: "भूमिका सोनवानी", post: "अध्यक्ष" , photo: "https://github.com/gulshanbhardwaj1/Saraswati-Shishu-Mandir-Arjuni/blob/main/all-images/%20vigyan%20Parishad%20adhyaksh.jpg"},
+      { name: "रितेश बंजारे", post: "उपाध्यक्ष" },
+      { name: "—", post: "सचिव" },
+      { name: "चांदनी निषाद", post: "सह सचिव" },
+      { name: "-", post: "कोषाध्यक्ष" }
+    ]
+  },
+];
+
+/* ---- Render logic (इसमें बदलाव करने की आवश्यकता नहीं) ---- */
+const wrap = document.getElementById("councilsWrap");
+const chipsWrap = document.getElementById("filterChips");
+
+function initials(name){
+  return name.trim().split(/\s+/).slice(0,2).map(w => w[0]).join("");
+}
+
+function renderChips(){
+  chipsWrap.innerHTML = "";
+  const allChip = document.createElement("button");
+  allChip.className = "filter-chip active";
+  allChip.textContent = "सभी";
+  allChip.dataset.filter = "सभी";
+  allChip.addEventListener("click", () => setFilter("सभी", allChip));
+  chipsWrap.appendChild(allChip);
+
+  COUNCILS.forEach(c => {
+    const chip = document.createElement("button");
+    chip.className = "filter-chip";
+    chip.textContent = c.name;
+    chip.dataset.filter = c.id;
+    chip.addEventListener("click", () => setFilter(c.id, chip));
+    chipsWrap.appendChild(chip);
+  });
+}
+
+let currentFilter = "सभी";
+// यह गेंडर टैब सिर्फ "vidyalaya" परिषद के अंदर काम करता है, बाकी सभी परिषदें
+// हमेशा अपने सभी सदस्य (भैया + बहन दोनों) सामान्य रूप से दिखाती हैं।
+let vidyalayaGender = "boy";
+
+function setFilter(id, btn){
+  document.querySelectorAll(".filter-chip").forEach(c => c.classList.remove("active"));
+  btn.classList.add("active");
+  currentFilter = id;
+  render(id);
+}
+
+function toDirectImageUrl(url){
+  if (!url) return url;
+  // GitHub पर फ़ाइल खोलने पर जो लिंक मिलता है (github.com/.../blob/...) वह असल में
+  // एक HTML पेज होता है, सीधी इमेज फ़ाइल नहीं — इसलिए <img> में वह काम नहीं करता।
+  // यह फ़ंक्शन उसे अपने-आप raw.githubusercontent.com वाले सीधे इमेज लिंक में बदल देता है,
+  // ताकि GitHub से कॉपी किया हुआ सामान्य लिंक भी बिना किसी बदलाव के काम कर जाए।
+  const m = url.match(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\/(.+)$/);
+  if (m) return `https://raw.githubusercontent.com/${m[1]}/${m[2]}/${m[3]}`;
+  return url;
+}
+
+function avatarHTML(m){
+  // अगर member ऑब्जेक्ट में "photo" (image URL) दिया गया है तो असली फ़ोटो दिखेगी,
+  // वरना पहले जैसे नाम के इनिशियल्स (शॉर्ट-फॉर्म) दिखेंगे।
+  return m.photo
+    ? `<img src="${toDirectImageUrl(m.photo)}" alt="${m.name}" loading="lazy">`
+    : initials(m.name);
+}
+
+function buildGenderTabs(container, activeGender, onChange){
+  const tabsWrap = document.createElement("div");
+  tabsWrap.className = "gender-tabs-wrap";
+  tabsWrap.innerHTML = `
+    <button class="gender-tab" data-gender="boy">किशोर भारती </button>
+    <button class="gender-tab" data-gender="girl">कन्या भारती </button>
+    <span class="gender-tabs-underline"></span>`;
+  container.appendChild(tabsWrap);
+
+  const tabs = tabsWrap.querySelectorAll(".gender-tab");
+  const underline = tabsWrap.querySelector(".gender-tabs-underline");
+
+  function moveUnderline(tabEl){
+    underline.style.left = tabEl.offsetLeft + "px";
+    underline.style.width = tabEl.offsetWidth + "px";
+  }
+
+  tabs.forEach(tab => {
+    tab.classList.toggle("active", tab.dataset.gender === activeGender);
+    tab.addEventListener("click", () => onChange(tab.dataset.gender));
+  });
+
+  // DOM में जुड़ने के बाद ही सही चौड़ाई/स्थिति मिलती है, इसलिए अगले फ्रेम में खिसकाएँ
+  requestAnimationFrame(() => {
+    const active = tabsWrap.querySelector(".gender-tab.active");
+    if (active) moveUnderline(active);
+  });
+}
+
+function renderGrid(grid, members){
+  grid.innerHTML = "";
+  members.forEach(m => {
+    const card = document.createElement("div");
+    card.className = "officer-card";
+    card.innerHTML = `
+      <div class="officer-avatar">${avatarHTML(m)}</div>
+      <h3>${m.name}</h3>
+      <span class="officer-post">${m.post}</span>`;
+    // अगर फ़ोटो लिंक गलत हो या फ़ाइल लोड न हो पाए, तो टूटी हुई इमेज दिखने के बजाय
+    // अपने-आप वापस इनिशियल्स-वाले सर्कल पर चला जाए
+    const img = card.querySelector(".officer-avatar img");
+    if (img){
+      img.addEventListener("error", () => {
+        img.closest(".officer-avatar").innerHTML = initials(m.name);
+      }, { once: true });
+    }
+    grid.appendChild(card);
+  });
+}
+
+function render(filter = "सभी"){
+  wrap.innerHTML = "";
+  const list = filter === "सभी" ? COUNCILS : COUNCILS.filter(c => c.id === filter);
+
+  if (!list.length){
+    wrap.innerHTML = '<p class="empty-msg">इस परिषद हेतु अभी कोई जानकारी उपलब्ध नहीं है।</p>';
+    return;
+  }
+
+  let totalShown = 0;
+
+  list.forEach(council => {
+    const isVidyalaya = council.id === "vidyalaya";
+    const members = isVidyalaya
+      ? council.members.filter(m => m.gender === vidyalayaGender)
+      : council.members;
+    if (!members.length) return;
+    totalShown += members.length;
+
+    const block = document.createElement("section");
+    block.className = "council-block";
+    block.innerHTML = `
+      <div class="council-title">
+        <h2>${council.name}</h2>
+        <span class="line"></span>
+        <span class="council-badge">${members.length} पदाधिकारी</span>
+      </div>`;
+
+    if (isVidyalaya){
+      buildGenderTabs(block, vidyalayaGender, (g) => {
+        vidyalayaGender = g;
+        render(currentFilter);
+      });
+    }
+
+    const grid = document.createElement("div");
+    grid.className = "officer-grid";
+    block.appendChild(grid);
+    renderGrid(grid, members);
+
+    wrap.appendChild(block);
+  });
+
+  if (!totalShown){
+    wrap.innerHTML = '<p class="empty-msg">इस श्रेणी हेतु अभी कोई जानकारी उपलब्ध नहीं है।</p>';
+  }
+}
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+renderChips();
+render();
+</script>
+</body>
+</html>
