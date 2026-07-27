@@ -36,13 +36,14 @@
         कोई टकराव (conflict) नहीं होगा।
      ----------------------------------------------------------- */
   const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
-  };
+  apiKey: "AIzaSyA3hhobZdMiccTYUlJJlGzqcInCyYI5tl4",
+  authDomain: "saraswati-shishu-mandir-arjuni.firebaseapp.com",
+  databaseURL: "https://saraswati-shishu-mandir-arjuni-default-rtdb.firebaseio.com",
+  projectId: "saraswati-shishu-mandir-arjuni",
+  storageBucket: "saraswati-shishu-mandir-arjuni.firebasestorage.app",
+  messagingSenderId: "993993303304",
+  appId: "1:993993303304:web:5ef6364df7ff26ced978bd"
+};
 
   let auth = null, db = null, storage = null, firebaseReady = false;
 
